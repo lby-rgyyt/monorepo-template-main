@@ -1,7 +1,7 @@
 # Monorepo
 
 - [ ] Boyang Liu **(TODO: Change this heading to your name, because your github name is often not your real name)**
-- [ ] /ˈboʊjæŋ luː/
+- [ ] /ˈboʊjæŋ ljuː/
 
 ## Important Documents 
 
