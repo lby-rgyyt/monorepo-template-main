@@ -6,17 +6,18 @@ Update your answers to the following questions, make sure to commit this file an
 ## Task 1 - oop.py
 
 1. Is MObject an abstract or a concrete class? Explain why:
-	- *edit your response*
-1. The 'Image' class has commented code for a `__del__` method. What does this commented-out method do?
-	- *edit your response*
-1. What class does Texture inherit from?
-	- *edit your response*
-1. What methods and attributes does the Texture class inherit from 'Image'? 
-	- *edit your response*
-1. Do you think a texture should have a 'has-a' (composition) or 'is-a'(inheritance) relationship with 'Image'? If you think it is a 'has-a' relationship, refactor the code. As long as you defend your decision in the response below it could be either--but defend your position well!
-	- *edit your response*
-1. I did not declare a constructor for Texture. Does Python automatically create constructors for us? 
-	- *edit your response*
+	- I think it is a concrete class, it just has no specific methods and attributes.
+2. The 'Image' class has commented code for a `__del__` method. What does this commented-out method do?
+	- This method is used to destroy the instance we created.
+3. What class does Texture inherit from?
+	- Texture inherits from Image.
+4. What methods and attributes does the Texture class inherit from 'Image'? 
+	- Methods: constructor, getWidth(), getHeight(), getPixelColorR(), getPixels(), setPixelsToRandomValue()
+	- Attributes:  m_width, m_height, m_colorChannels, m_Pixels
+5. Do you think a texture should have a 'has-a' (composition) or 'is-a'(inheritance) relationship with 'Image'? If you think it is a 'has-a' relationship, refactor the code. As long as you defend your decision in the response below it could be either--but defend your position well!
+	- I think a texture should have a 'has-a' relationship with 'Image'. That is, every images have their own texture. I will add a texture attribute to Image.
+6. I did not declare a constructor for Texture. Does Python automatically create constructors for us? 
+	- Python do provide a default constructor.
 
 ## Task 2 - Singleton
 

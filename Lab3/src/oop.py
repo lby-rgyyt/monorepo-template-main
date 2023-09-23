@@ -7,12 +7,14 @@ class MObject:
 
 
 class Image:
-    def __init__(self, w, h):
+    def __init__(self, w, h, texture):
         print("Constructor called")
         self.m_width = w
         self.m_height = h
         self.m_colorChannels = 3  # Assume we support RGB channels only.
-        self.m_Pixels = [random.randint(0, 255) for _ in range(w * h * self.m_colorChannels)]
+        self.m_Pixels = [random.randint(0, 255)
+                         for _ in range(w * h * self.m_colorChannels)]
+        self.texture = texture
 
     """
     def __del__(self):
@@ -25,7 +27,6 @@ class Image:
     def getHeight(self):
         return self.m_height
 
-
     def getPixelColorR(self, x, y):
         return self.m_Pixels[self.m_width * self.m_colorChannels * y + x]
 
@@ -35,10 +36,11 @@ class Image:
     def setPixelsToRandomValue(self):
         value = random.randint(0, 255)
         # Set the entire list to one color in one function call
-        self.m_Pixels = [value] * (self.m_width * self.m_height * self.m_colorChannels)
+        self.m_Pixels = [value] * \
+            (self.m_width * self.m_height * self.m_colorChannels)
 
 
-class Texture(Image):
+class Texture():
     pass
 
 
