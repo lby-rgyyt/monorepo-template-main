@@ -6,31 +6,31 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Change color
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: To change colors to draw on the canvas
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: There must be an existing canvas and in a responsive state
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: Press the number keys 1 through 8
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: A user will press number keys 1 through 8 to change different colors they want to draw.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: The program may become potentially unresponsive. In this case, the program can be terminated from the operating system.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: Medium-priority
 
-**When available**: *the targeted release that covers this use case*
+**When available**: Second release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: The primary actor communicates through I/O devices. This includes the keyboard. The system is responsible for maintaining focus of the window when the user press number keys, and should respond within 1 second of pressing number keys event. The user is responsible for all other input.
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: We might need to add more colors for users to choose in the future, and add a palette to let users adjust colors.
 
 <hr>
 
